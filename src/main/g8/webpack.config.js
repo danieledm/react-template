@@ -10,28 +10,28 @@
      module: {
          rules: [
              {
-                 test: /\.js$$/,
+                 test: /\.js\$/,
                  loader:  'babel-loader',
                  query: {
                      presets: ['es2015', 'react']
                  }
             },
-            { test: /\.jsx$$/, use: 'babel-loader', exclude: /node_modules/ },
+            { test: /\.jsx\$/, use: 'babel-loader', exclude: /node_modules/ },
             {
-                test: /\.css$$/,
+                test: /\.css\$/,
                 use: [
                     'style-loader',
                     'css-loader'
                 ]
             },
             {
-                test: /\.(png|svg|jpg|gif)$$/,
+                test: /\.(png|svg|jpg|gif)\$/,
                 use: [
                     'file-loader'
                 ]
            },
            {
-                test: /\.(woff|woff2|eot|ttf|otf)$$/,
+                test: /\.(woff|woff2|eot|ttf|otf)\$/,
                 use: [
                     'file-loader'
                 ]
